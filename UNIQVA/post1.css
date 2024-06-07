@@ -1,0 +1,124 @@
+body {
+        position: relative;
+        height: 100vh;
+}
+.product {
+    margin: 5px;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+.product-image {
+    width: 80%;
+    height: auto;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+    color:#a85100;
+    font-weight: bold;
+    background: rgb(255, 233, 106);
+    font-size: 35px;
+}
+
+.description {
+    font-size: 25px;
+    padding: 15px;
+    padding-top: 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.comment {
+        font-family: playfair display;
+        font-size: 30px;
+        padding: 3px 150px;
+        font-weight: bold;
+        position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  margin-left: 50px
+
+    
+}
+
+.displaycomments {
+    display:flex;
+    justify-content: space-between;
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 0 auto;
+
+}
+  
+  form {
+    width: 500px;
+    margin-top: 10px;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 640px;
+
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    font-size: 25px;
+    margin: 5px 10px 10px 10px;
+    font-family: "roboto",serif;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 5px solid blue;
+    width: 640px;
+
+
+  }
+
+  input[type="text"], textarea
+  {
+    width: 95%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  
+  button {
+    display:block;
+    margin:auto;
+    margin-top:10px;
+    padding: 5px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .ok {
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
