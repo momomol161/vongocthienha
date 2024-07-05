@@ -11,7 +11,7 @@
   
 
     var loginPassword = document.getElementById('loginPassword').value;
-    var loginEmail = document.getElementById('loginEmail').value;
+    var loginEmail = document.getElementById('lSoginEmail').value;
 
     var bibifind = users.find(function(user) {
       return user.email === loginEmail && user.password === loginPassword
@@ -23,7 +23,7 @@
     }
 
     else {
-      alert("Wrong email or password idk")
+      alert("Sai mật khẩu hoặc email")
     }
   });
 
@@ -35,13 +35,13 @@
       var existUser = users.find(function(user) {
         return user.email === RegisEmail && user.password === RegisPassword
       })
-      if (existUser) {
-        alert("It existed haiz!")
+      if (existUser) 
+        alert("Tài khoản này đã tồn tại")
       }
   
       else {
         users.push ({email:RegisEmail,password:RegisPassword});
-        alert("Registration succeeded but you fail in life")
+        alert("Bạn đã đăng ký thành công")
       }
     });
 
