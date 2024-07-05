@@ -1,62 +1,64 @@
-    // dummy user data
-    // tạo mảng
+
     var users = [
-      { username: "user1", password: "password1" }, // 1 phần tử mảng, phần tử này gọi là đối tượng
+      { username: "user1", password: "password1" }, 
       { username: "user2", password: "password2" },
       { username: "user3", password: "password3" }
     ];
 
-// form login
+
   document.getElementById('login').addEventListener("submit",function(event) {
     event.preventDefault();
   
-    // Extracting values from inputs
-    // get value login
+
     var loginPassword = document.getElementById('loginPassword').value;
     var loginEmail = document.getElementById('loginEmail').value;
 
-    // find the user in the users' array
     var bibifind = users.find(function(user) {
       return user.email === loginEmail && user.password === loginPassword
     });
 
-    // S1: Found
     if (bibifind) {
       alert("ok")
       window.location.href="home.html"
     }
 
-    // S2: Unfound
     else {
       alert("Wrong email or password idk")
     }
   });
 
-// form sign-up
       document.getElementById('sign-up').addEventListener("submit",function(event) {
         event.preventDefault();
-      // get value sign-up
       var RegisPassword = document.getElementById('password').value;
       var RegisEmail = document.getElementById('email').value;
 
-      // Check the user's existence if or if not be there
       var existUser = users.find(function(user) {
         return user.email === RegisEmail && user.password === RegisPassword
       })
-      // S1: Plagiarism
       if (existUser) {
         alert("It existed haiz!")
       }
   
-      // S2: Originality
       else {
         users.push ({email:RegisEmail,password:RegisPassword});
         alert("Registration succeeded but you fail in life")
       }
     });
 
-    // Do something with the values, for example, log them to the console
     console.log('Email:', email);
     console.log('Password:', password);
+
+//     1. Ôn tập về HTML, CSS, Javascript và giời thiệu về công nghệ lưu trữ mã nguồn Github
+// 2. Cấu trúc vòng lặp for, while và các kiểu dữ liệu không nguyên thủy (Array, Object)
+// 3. Lưu trữ dữ liệu bằng Local Storage.
+// 4.  Async/Await trong JS
+// 5. Lập trình bất đồng bộ trong Javascript //
+
+// // Javascript
+// // HTML
+// // CSS
+// // Localstorage
+// // API
+// // Git
   
 
